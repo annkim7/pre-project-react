@@ -23,7 +23,7 @@ Create React App을 활용해 프론트엔드 개발에 유용한 프레임워�
 
 ### Styled-Component
 
-### ESLint, Prettier
+### ESLint, Prettier??
 
 npm run start 가 에러없이 시작하는 코드를 원격 main 브랜치로 push 합니다.<br>
-아래와 같이 npm run start 로 리액트 개발 서버가 켜져있는 브라우저 화면을 캡쳐합니다.
+아래와 같이 npm run start 로 리액트 개발 서버가 켜져있는 브라우저 화면을 캡쳐합니다.<br>
