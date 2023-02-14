@@ -1,22 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { increase, decrease } from './actions';
 
 function App() {
+  const state = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const plusNum = () => {
+    dispatch(increase());
+  };
+  const minusNum = () => {
+    dispatch(decrease());
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <section>
+          <h3>{`${state}`}</h3>
+          <div>
+            <button onClick={plusNum}>+</button>
+            <button onClick={minusNum}>-</button>
+          </div>
+        </section>
       </header>
     </div>
   );
